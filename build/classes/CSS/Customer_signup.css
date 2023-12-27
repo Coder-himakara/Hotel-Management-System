@@ -1,0 +1,48 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Oct 27, 2022, 9:48:39 AM
+    Author     : PASINDU
+*/
+
+#cus_label{
+    -fx-underline: true ;
+}
+
+
+#create_btn{
+    -fx-background-color:crimson ;
+    -fx-background-radius:10px ;
+    -fx-border-color:transparent;
+    -fx-border-width: 0 3 3 0;
+
+}
+
+#create_btn:hover {
+    -fx-background-color: gold ;
+    -fx-background-radius:10px;
+    -fx-border-color:black;
+    -fx-border-width: 0 3 3 0;
+    -fx-background-insets: 0;
+}
+
+#back_btn{
+    -fx-background-color: crimson  ;
+    -fx-text-fill: black ;
+    -fx-background-radius: 10px;
+
+}
+
+#back_btn:hover {
+    -fx-background-color: gold ;
+    -fx-background-radius:10px;
+    -fx-border-color:black;
+    -fx-border-width: 0 3 3 0;
+    -fx-background-insets: 0;
+}
+
+.root{
+    -fx-background-color: linear-gradient(to bottom right, steelblue, turquoise);
+}

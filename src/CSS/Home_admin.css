@@ -1,0 +1,31 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Nov 9, 2022, 3:48:27 PM
+    Author     : PASINDU
+*/
+.root{
+    -fx-background-color: linear-gradient(to bottom right, darkolivegreen, darkgoldenrod);
+}
+#button_pane{
+    -fx-background-color: darkolivegreen;
+}
+
+
+#cutomers_check , #check_in , #check_out ,#rooms , #reports , #profile , #signout_btn{
+    -fx-background-color: lightblue ;
+    -fx-background-radius:10px ;
+    -fx-border-color:transparent;
+    -fx-border-width: 0 3 3 0;
+
+}
+
+#cutomers_check:hover, #check_in:hover , #check_out:hover ,#rooms:hover , #reports:hover , #profile:hover , #signout_btn:hover{
+    -fx-background-color: wheat ;
+    -fx-background-radius:10px;
+    -fx-border-color:black;
+    -fx-border-width: 0 3 3 0;
+    -fx-background-insets: 0;
+}

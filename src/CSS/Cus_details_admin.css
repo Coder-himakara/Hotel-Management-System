@@ -1,0 +1,36 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Nov 13, 2022, 12:16:22 PM
+    Author     : PASINDU
+*/
+
+.root{
+    -fx-background-color: linear-gradient(to bottom, navy  , steelblue );
+}
+
+#add_customer , #delete_btn , #update_btn ,#clear_btn , #search_btn {
+    -fx-background-color: mistyrose ;
+    -fx-background-radius:10px ;
+    -fx-border-color:transparent;
+    -fx-border-width: 0 3 3 0;
+
+}
+
+#add_customer:hover, #delete_btn:hover , #update_btn:hover ,#clear_btn:hover , #search_btn:hover {
+    -fx-background-color: mintcream ;
+    -fx-background-radius:10px;
+    -fx-border-color:black;
+    -fx-border-width: 0 3 3 0;
+    -fx-background-insets: 0;
+}
+
+#exit_btn{
+    -fx-background-color: tomato;
+}
+
+#exit_btn:hover{
+    -fx-background-color: pink ;
+}

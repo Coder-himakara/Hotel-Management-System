@@ -1,0 +1,101 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Oct 28, 2022, 7:03:54 AM
+    Author     : PASINDU
+*/
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+#tabpane .tab
+{
+    -fx-background-color: seashell;
+}
+
+#tabpane .tab:selected
+{
+    -fx-background-color: lightskyblue;
+}
+#cus_pane{
+    -fx-background-color: mintcream;
+}
+
+#admin_pane{
+    -fx-background-color: mintcream;
+}
+
+#check_rooms{
+    -fx-background-color:salmon ;
+    -fx-background-radius:5px ;
+    -fx-border-color:dimgrey ;
+    -fx-border-width: 2 3 3 2;
+
+}
+#login_customer_btn{
+    -fx-background-color:orange ;
+    -fx-background-radius:10px ;
+    -fx-border-color:transparent;
+    -fx-border-width: 0 3 3 0;
+
+}
+
+#login_customer_btn:hover {
+    -fx-background-color: tomato ;
+    -fx-background-radius:10px;
+    -fx-border-color:black;
+    -fx-border-width: 0 3 3 0;
+    -fx-background-insets: 0;
+}
+#signup_customer_btn{
+    -fx-background-color:orange  ;
+    -fx-background-radius:10px ;
+    -fx-border-color:transparent;
+    -fx-border-width: 0 3 3 0;
+
+}
+
+#signup_customer_btn:hover {
+    -fx-background-color: tomato ;
+    -fx-background-radius:10px;
+    -fx-border-color:black;
+    -fx-border-width: 0 3 3 0;
+    -fx-background-insets: 0;
+}
+#login_admin_btn{
+    -fx-background-color:orange ;
+    -fx-background-radius:10px ;
+    -fx-border-color:transparent;
+    -fx-border-width: 0 3 3 0;
+
+}
+#login_admin_btn:hover {
+    -fx-background-color: tomato ;
+    -fx-background-radius:10px;
+    -fx-border-color:black;
+    -fx-border-width: 0 3 3 0;
+    -fx-background-insets: 0;
+}
+#signup_admin_btn{
+    -fx-background-color:orange ;
+    -fx-background-radius:10px ;
+    -fx-border-color:transparent;
+    -fx-border-width: 0 3 3 0;
+
+}
+#signup_admin_btn:hover {
+    -fx-background-color: tomato ;
+    -fx-background-radius:10px;
+    -fx-border-color:black;
+    -fx-border-width: 0 3 3 0;
+    -fx-background-insets: 0;
+}
+
+
+
+.root{
+    -fx-background-color: linear-gradient(to bottom right, cadetblue, darkslateblue );
+
+}

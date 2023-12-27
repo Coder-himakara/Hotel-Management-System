@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="620.0" prefWidth="914.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel_management.Admin_SignupController">
+   <children>
+      <Label layoutX="20.0" prefHeight="52.0" prefWidth="375.0" text="Create New Admin Profile">
+         <font>
+            <Font name="Bodoni MT Condensed" size="49.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5056818181818181" centerY="0.5" radius="0.9146341463414633">
+               <stops>
+                  <Stop color="#c21035" />
+                  <Stop color="#c21035" offset="0.050724637681159424" />
+                  <Stop color="#2411c2" offset="0.5217391304347826" />
+                  <Stop color="#4bbf11" offset="0.9239840863881785" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="32.0" layoutY="93.0" prefHeight="30.0" prefWidth="245.0" text="Personal Information" textFill="#741fc2">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="504.0" layoutY="86.0" prefHeight="43.0" prefWidth="291.0" text="Employment Information" textFill="#741fc2">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="503.0" layoutY="323.0" prefHeight="30.0" prefWidth="262.0" text="Sign Up Information" textFill="#741fc2">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="146.0" prefHeight="21.0" prefWidth="134.0" text="Title (Mr/Mrs/Ms)">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="181.0" prefHeight="21.0" prefWidth="120.0" text="Name with Intilas">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="222.0" prefHeight="26.0" prefWidth="79.0" text="Gender">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="259.0" prefHeight="21.0" prefWidth="141.0" text="Date of Birth">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="356.0" prefHeight="21.0" prefWidth="107.0" text="Nationality">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="451.0" prefHeight="21.0" prefWidth="134.0" text="Phone Number">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="494.0" prefHeight="21.0" prefWidth="79.0" text="Email">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="408.0" prefHeight="21.0" prefWidth="107.0" text="NIC Number">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="176.0" layoutY="178.0" prefHeight="31.0" prefWidth="262.0" />
+      <TextField fx:id="phone_no" layoutX="176.0" layoutY="447.0" />
+      <TextField fx:id="email" layoutX="176.0" layoutY="492.0" />
+      <TextField fx:id="nic_no" layoutX="176.0" layoutY="404.0" />
+      <DatePicker fx:id="dob_picker" layoutX="176.0" layoutY="256.0" promptText="mm/dd/yyyy" />
+      <Label layoutX="27.0" layoutY="310.0" prefHeight="31.0" prefWidth="96.0" text="Address">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="address" layoutX="176.0" layoutY="310.0" prefHeight="31.0" prefWidth="262.0" />
+      <ChoiceBox fx:id="gender_box" layoutX="176.0" layoutY="220.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="title_box" layoutX="176.0" layoutY="144.0" prefHeight="31.0" prefWidth="86.0" />
+      <TextField fx:id="nationality" layoutX="176.0" layoutY="354.0" prefHeight="31.0" prefWidth="187.0" />
+      <Label layoutX="499.0" layoutY="146.0" prefHeight="21.0" prefWidth="120.0" text="Date of Hire">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="499.0" layoutY="193.0" prefHeight="21.0" prefWidth="96.0" text="CV Number">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="499.0" layoutY="245.0" prefHeight="27.0" prefWidth="245.0" text="Agree to Terms and Conditions">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cv_no" layoutX="641.0" layoutY="194.0" />
+      <DatePicker fx:id="hiredate_picker" layoutX="641.0" layoutY="144.0" promptText="mm/dd/yyyy" />
+      <Label layoutX="499.0" layoutY="377.0" prefHeight="21.0" prefWidth="120.0" text="User Name">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="499.0" layoutY="421.0" prefHeight="21.0" prefWidth="96.0" text="Password">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="499.0" layoutY="472.0" prefHeight="21.0" prefWidth="141.0" text="Confirm Password">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="user_name" layoutX="660.0" layoutY="375.0" />
+      <PasswordField fx:id="password" layoutX="660.0" layoutY="419.0" />
+      <PasswordField fx:id="con_password" layoutX="660.0" layoutY="470.0" />
+      <HBox fx:id="terms_box" alignment="CENTER" layoutX="613.0" layoutY="272.0" prefHeight="51.0" prefWidth="231.0" spacing="30.0">
+         <children>
+            <RadioButton fx:id="yes_btn" mnemonicParsing="false" text="Yes">
+               <toggleGroup>
+                  <ToggleGroup fx:id="agreeTC" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="no_btn" mnemonicParsing="false" text="No" toggleGroup="$agreeTC" />
+         </children>
+      </HBox>
+      <Button fx:id="create_btn" layoutX="207.0" layoutY="546.0" mnemonicParsing="false" onAction="#sign_up" prefHeight="43.0" prefWidth="262.0" stylesheets="@../CSS/Admin_signup.css" text="Create Account">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="27.0" />
+         </font>
+      </Button>
+      <Button fx:id="back_btn" layoutX="531.0" layoutY="546.0" mnemonicParsing="false" onAction="#back_login" prefHeight="43.0" prefWidth="164.0" stylesheets="@../CSS/Admin_signup.css" text="Back">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="27.0" />
+         </font>
+      </Button>
+      <Label fx:id="error_label" layoutX="406.0" layoutY="14.0" prefHeight="43.0" prefWidth="468.0" textFill="#e53322">
+         <font>
+            <Font name="Arial" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

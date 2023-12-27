@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="564.0" prefWidth="766.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel_management.LogingController">
+   <children>
+      <TabPane fx:id="tabpane" layoutY="114.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="766.0" stylesheets="@../CSS/Main_login.css" tabClosingPolicy="UNAVAILABLE" tabMinHeight="50.0" tabMinWidth="300.0">
+        <tabs>
+          <Tab id="customer_tab" fx:id="customer_login_screen" text="CUSTOMER">
+            <content>
+              <AnchorPane id="cus_pane" fx:id="cus_pane" minHeight="0.0" minWidth="0.0" prefHeight="389.0" prefWidth="853.0">
+                     <children>
+                        <Label layoutX="22.0" prefHeight="56.0" prefWidth="341.0" text="Customer Login" textFill="#1f40c4">
+                           <font>
+                              <Font name="Berlin Sans FB" size="28.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="99.0" prefHeight="34.0" prefWidth="228.0" text="USER NAME">
+                           <font>
+                              <Font name="Baskerville Old Face" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="23.0" layoutY="195.0" prefHeight="45.0" prefWidth="221.0" text="PASSWORD">
+                           <font>
+                              <Font name="Baskerville Old Face" size="19.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="username_customer" layoutX="22.0" layoutY="144.0" prefHeight="40.0" prefWidth="270.0" />
+                        <PasswordField fx:id="password_customer" layoutX="22.0" layoutY="250.0" prefHeight="42.0" prefWidth="269.0" />
+                        <Button fx:id="login_customer_btn" layoutX="193.0" layoutY="325.0" mnemonicParsing="false" onAction="#cus_login_function" prefHeight="46.0" prefWidth="130.0" text="Login">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="signup_customer_btn" layoutX="410.0" layoutY="325.0" mnemonicParsing="false" onAction="#cus_signup_function" prefHeight="46.0" prefWidth="129.0" text="SignUp">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="check_rooms" layoutX="406.0" layoutY="28.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="266.0" text="Check Availability">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Label fx:id="error_label_customer" layoutX="22.0" layoutY="56.0" prefHeight="39.0" prefWidth="371.0" textFill="#d03c3c">
+                           <font>
+                              <Font name="Calibri" size="23.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="cus_main_img" fitHeight="220.0" fitWidth="352.0" layoutX="363.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/customers%20main.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="cus_name_icn" fitHeight="24.0" fitWidth="36.0" layoutX="133.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/username.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="cus_pass_icn" fitHeight="28.0" fitWidth="25.0" layoutX="133.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/password.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+            </content>
+               <graphic>
+                  <ImageView fx:id="cus_image" fitHeight="36.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/customer%20image.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+          </Tab>
+          <Tab id="admin_tab" fx:id="admin_login_screen" text="ADMIN">
+            <content>
+              <AnchorPane id="admin_pane" fx:id="admin_pane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="27.0" layoutY="80.0" prefHeight="34.0" prefWidth="228.0" text="USER NAME">
+                           <font>
+                              <Font name="Baskerville Old Face" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="28.0" layoutY="185.0" prefHeight="45.0" prefWidth="221.0" text="PASSWORD">
+                           <font>
+                              <Font name="Baskerville Old Face" size="19.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="username_admin" layoutX="26.0" layoutY="128.0" prefHeight="40.0" prefWidth="270.0" />
+                        <PasswordField fx:id="password_admin" layoutX="27.0" layoutY="248.0" prefHeight="42.0" prefWidth="269.0" />
+                        <Button fx:id="login_admin_btn" layoutX="196.0" layoutY="318.0" mnemonicParsing="false" onAction="#ad_login_function" prefHeight="46.0" prefWidth="130.0" text="Login">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="signup_admin_btn" layoutX="387.0" layoutY="318.0" mnemonicParsing="false" onAction="#ad_signup_function" prefHeight="46.0" prefWidth="129.0" text="SignUp">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Label layoutX="26.0" prefHeight="56.0" prefWidth="341.0" text="Admin Login" textFill="#1f2ead">
+                           <font>
+                              <Font name="Berlin Sans FB" size="28.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="error_label_admin" layoutX="26.0" layoutY="45.0" prefHeight="39.0" prefWidth="317.0" textFill="#d03c3c">
+                           <font>
+                              <Font name="Calibri" size="23.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="admin_main_img" fitHeight="268.0" fitWidth="367.0" layoutX="332.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/admin%20main.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="admin_name_icn" fitHeight="29.0" fitWidth="26.0" layoutX="135.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/username.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="admin_pass_icn" fitHeight="26.0" fitWidth="27.0" layoutX="135.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/password.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+            </content>
+               <graphic>
+                  <ImageView fx:id="admin_image" fitHeight="43.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/admin%20image.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+          </Tab>
+        </tabs>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TabPane>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="56.0" prefWidth="250.0" text="Login Here">
+         <font>
+            <Font name="Cooper Black" size="43.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.3352272727272727" centerY="0.47572815533980584" focusDistance="0.5121951219512195" radius="1.0">
+               <stops>
+                  <Stop color="#c30010" />
+                  <Stop color="#0004c2" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <ImageView fx:id="welcome" fitHeight="86.0" fitWidth="288.0" layoutX="262.0" layoutY="25.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/welcome.png" />
+         </image>
+         <effect>
+            <Bloom />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="hotel_logo" fitHeight="139.0" fitWidth="172.0" layoutX="589.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/hotels-logo-41800.png" />
+         </image>
+         <effect>
+            <Glow />
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>

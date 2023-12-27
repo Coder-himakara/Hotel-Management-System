@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Hotel_Management.jnlp">
+  <information>
+    <title>Hotel_Management</title>
+    <vendor>PASINDU</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Hotel_Management.jar" size="6851604" download="eager" />
+    <jar href="lib\mysql-connector-java-8.0.11.jar" size="2036609" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="hotel_management.Hotel_Management"  name="Hotel_Management" />
+  <update check="always"/>
+</jnlp>
